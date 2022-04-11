@@ -34,6 +34,8 @@ const WelcomeScreen = ({ slides = [], onDone }) => {
         renderItem={({ item }) => <Slide item={item} />}
         onViewableItemsChanged={onViewableItemsChanged.current}
       />
+
+      
       <View style={styles.indicatorContainer}>
         <Indicators
           currentSlideIndex={currentSlideIndex}

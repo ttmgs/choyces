@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import WelcomeScreen from "../components/welcomeScreen";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [isFirstTimeLoad, setIsFirstTimeLoad] = useState(true);
@@ -25,7 +26,7 @@ export default function App() {
     {
       key: 1,
       title: 'Welcome to the Choyces App',
-      desc: 'Learning is fun!',
+      // desc: 'Learning is fun!',
       backgroundColor: 'red',
     },
     {

@@ -7,7 +7,8 @@ const navigator = createStackNavigator({
 }, {
     initialRouteName: 'Home',
     defaultNavigationOptions: {
-        title: 'Choyces'
+        title: 'Choyces',
+        headerShown: false
     }
 });
 
