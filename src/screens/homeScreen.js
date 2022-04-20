@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, StatusBar, TouchableOpacity } from 'react-native';
-import WelcomeScreen from "../components/welcomeScreen";
+import WelcomeScreen from "../components/welcome/welcomeScreen";
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import OptionButton from '../components/OptionButton';
+import OptionButton from '../components/welcome/OptionButton';
 import { FontAwesome } from '@expo/vector-icons'; 
 
 export default function App() {

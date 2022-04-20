@@ -12,7 +12,7 @@ const Slide = ({ item }) => {
       <View style={styles.image_container}>
    </View>
    <Text style={styles.title}>{title}</Text>
-   <Image style={styles.image} source={require('../images/choyces.png')} />
+   <Image style={styles.image} source={require('../../images/choyces.png')} />
       <Text style={styles.text}>{desc}</Text>
     </View>
 
