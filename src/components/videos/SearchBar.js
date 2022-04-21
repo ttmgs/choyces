@@ -1,5 +1,6 @@
 import React from "react";
 import { View, TextInput, StyleSheet } from "react-native";
+import { Ionicons } from '@expo/vector-icons';
 
 
 
@@ -9,8 +10,8 @@ import { View, TextInput, StyleSheet } from "react-native";
 
 const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
     return(
-        <View style={styles.container}>
-
+        <View style={styles.container}> 
+         <Ionicons name="ios-search-circle-outline" size={40} color="black" />
             <TextInput 
             value={term}
             onChangeText={onTermChange}
@@ -27,7 +28,7 @@ const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     input: {
         width: '100%',

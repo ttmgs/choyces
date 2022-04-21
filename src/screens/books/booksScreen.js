@@ -1,9 +1,11 @@
 import React from "react";
-import { View, StyleSheet, Text, Button, FlatList, TouchableOpacity, ScrollView } from "react-native";
+import { View, StyleSheet, Text, Button, FlatList, TouchableOpacity } from "react-native";
+import { ScrollView } from 'react-native-virtualized-view';
 import SearchBar from "../../components/books/SearchBar";
 import bookAPI from "../../api/books/bookAPI";
 import BookFrame from "../../components/books/bookFrame";
 import { withNavigation } from "react-navigation";
+
 
 const BooksScreen = ({ navigation }) => {
 
@@ -18,12 +20,13 @@ const BooksScreen = ({ navigation }) => {
             />
             {errMessage ? <Text>{errMessage}</Text> : null}
 
+            {result.length > 1 ? <Text style={styles.topR}>We found {result.length} of the top results</Text> : null}
 
-<ScrollView>
       <FlatList
       showsVerticalScrollIndicator={false}
       data={result}
       keyExtractor={(result) =>  result.id}
+      ListFooterComponent={<View style={{height: 20}}/>}
       renderItem={({ item }) => {
           return(
               <TouchableOpacity onPress={() => {
@@ -35,7 +38,6 @@ const BooksScreen = ({ navigation }) => {
       }}
       />
                   {/* <Button onPress={() => goBack()} title="Go back" /> */}
-        </ScrollView>
         </View>
     )
 }
@@ -43,7 +45,7 @@ const BooksScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     container: {
-       marginTop: 40
+       marginTop: 40,
     }
 })
 

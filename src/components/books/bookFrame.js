@@ -1,6 +1,5 @@
 import React from "react";
 import { View, StyleSheet, Text, Image } from "react-native";
-import bookAPI from "../../api/books/bookAPI";
 
 
 
@@ -15,9 +14,9 @@ const BookFrame = ({ book }) => {
 const styles = StyleSheet.create({
     frame: {
         alignItems: 'center',
+        margin: 20
     },
     image: {
-        margin: 10,
         width: 200,
         height: 250,
     },

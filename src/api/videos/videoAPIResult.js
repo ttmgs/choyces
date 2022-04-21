@@ -15,17 +15,20 @@ export default () => {
     const getAPI = () => {
         try {
         fetch(url)
-            .then((response) => {
-                return response.json();
+            .then((YTresponse) => {
+                return YTresponse.json();
             })
-            .then((data) => {
-                setResults(data)
+            .then((YTdata, error) => {
+                if (error) {
+                    console.log(error)
+                } else {
+                    setResults(YTdata.items)
+                }
             })
         } catch {
             setErrMessage("Something went wrong")
         }
     }
-
 
     return [term, result, setTerm, errMessage, getAPI]
 
