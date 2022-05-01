@@ -1,24 +1,38 @@
 import React from "react";
 import { View, StyleSheet, Text, Button } from "react-native";
+import GameFrame from "../../components/games/gameFrame";
+import { withNavigation } from "react-navigation";
 
 
-
-
-const GameScreen = ({ navigation: {goBack} }) => {
+const GameScreen = () => {
 
     return(
         <View style={styles.container}>
-            <Text style={styles.text}>This is the games screen</Text>
-            <Button style={styles.button} onPress={() => goBack()} title="Go back" />
+
+        <GameFrame style={styles.memoryBtn} title="Trivia"/>
+        <GameFrame style={styles.memoryBtn} title="Blocks"/>
+
+
+
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
-      margin: 20,
-      marginVertical: 100
+        backgroundColor: '#fff',
+        flex: 1,
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
      },
+     memoryBtn: {
+        width: 200,
+        height: 100,
+        textAlign: 'center',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'green',
+     }
 
 })
 

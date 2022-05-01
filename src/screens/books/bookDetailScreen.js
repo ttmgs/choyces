@@ -45,7 +45,6 @@ const BookDetailScreen = ({ navigation }) => {
     return(
         <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
      
-                {console.log(result)}
 
                 <View style={styles.infoBox}>
 

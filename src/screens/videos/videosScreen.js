@@ -26,9 +26,11 @@ const VideoScreen = ({ navigation }) => {
             onTermChange={setTerm}
             onTermSubmit={getAPI}
             />
+
             {errMessage ? <Text>{errMessage}</Text> : null}
            
        {result.length > 1 ? <Text style={styles.topR}>We found {result.length} of the top results</Text> : null}
+       
        
          <FlatList
          data={result}
@@ -71,6 +73,10 @@ const styles = StyleSheet.create({
         height: 20
     }
 })
+
+
+
+
 
 
 export default withNavigation(VideoScreen);

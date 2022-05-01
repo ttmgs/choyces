@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'blue',
+        backgroundColor: 'black',
     },
     booksBtn: {
         width: 200,
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'red',
+        backgroundColor: 'black',
     }, 
     aboutBtn: {
         width: 200,
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'green',
+        backgroundColor: 'black',
     },
     videosBtn: {
         width: 200,
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'purple',
+        backgroundColor: 'black',
     },
     capIcon: {
         position: 'absolute',

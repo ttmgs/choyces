@@ -6,7 +6,8 @@ import GameScreen from './src/screens/games/gameScreen';
 import BooksScreen from './src/screens/books/booksScreen';
 import BookDetailScreen from './src/screens/books/bookDetailScreen';
 import VideoScreen from './src/screens/videos/videosScreen';
-
+import TriviaGameScreen from './src/screens/games/Trivia/triviaGameScreen';
+import TriviaStartScreen from './src/screens/games/Trivia/triviaStartScreen';
 
 const navigator = createStackNavigator({
     Home: HomeScreen,
@@ -14,7 +15,9 @@ const navigator = createStackNavigator({
     Games: GameScreen,
     Books: BooksScreen,
     BookDetail: BookDetailScreen,
-    Videos: VideoScreen
+    Videos: VideoScreen,
+    Trivia: TriviaGameScreen,
+    TriviaStart: TriviaStartScreen
 }, {
     initialRouteName: 'Home',
     defaultNavigationOptions: {
