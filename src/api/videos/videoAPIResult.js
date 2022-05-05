@@ -22,12 +22,13 @@ export default () => {
                 if (error) {
                     console.log(error)
                 } else {
-                    setResults(YTdata.items)
+                    setResults(YTdata.items)             
                 }
             })
         } catch {
             setErrMessage("Something went wrong")
         }
+
     }
 
     return [term, result, setTerm, errMessage, getAPI]

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, TextInput, StyleSheet } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 
@@ -9,6 +9,9 @@ import { Ionicons } from '@expo/vector-icons';
 
 
 const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
+
+
+
     return(
         <View style={styles.container}> 
          <Ionicons name="ios-search-circle-outline" size={40} color="black" />
@@ -17,8 +20,11 @@ const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
             onChangeText={onTermChange}
             onEndEditing={onTermSubmit}
             placeholder="Search for a topic"
-           style={styles.input}/>
+           style={styles.input}
+           />
            
+
+
         </View>
     )
 }

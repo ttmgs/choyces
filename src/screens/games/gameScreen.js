@@ -10,7 +10,6 @@ const GameScreen = () => {
         <View style={styles.container}>
 
         <GameFrame style={styles.memoryBtn} title="Trivia"/>
-        <GameFrame style={styles.memoryBtn} title="Blocks"/>
 
 
 

@@ -11,7 +11,7 @@ const TriviaGameScreen = ({ navigation }) => {
 
     return(
         <View style={styles.container}>
-            <Text>This is the Trivia Game </Text>
+
 
             <Button title="Each topic is random. Click to continue" onPress={() => {
               navigation.navigate("TriviaStart")
@@ -24,8 +24,9 @@ const TriviaGameScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 40
-    }
+        alignItems: 'center',
+        flex: 1,
+        justifyContent: 'center'    }
 })
 
 

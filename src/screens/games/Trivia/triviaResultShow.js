@@ -23,8 +23,10 @@ const TriviaResultShow = ({ result }) => {
        <View style={styles.questionContainer}>
          <Text style={styles.label}>{result.question}</Text>
        </View>
+       
+       <Text style={styles.topic}> Topic: {result.category}</Text>
 
-       <Text style={styles.topic}>{result.category}</Text>
+
 
 
      <View  style={styles.questionsContainer}>
@@ -102,8 +104,8 @@ const styles = StyleSheet.create({
       },
       label: {
         fontWeight: 'bold',
-        margin: 5,
-        fontSize: 20
+        fontSize: 20,
+        margin: 5
       
       },
        questionsContainer: {
@@ -111,9 +113,12 @@ const styles = StyleSheet.create({
       },
       topic: {
         fontWeight: 'bold',
+        color: 'red',
         marginBottom: 5
       }
 })
 
 
 export default TriviaResultShow;
+
+
