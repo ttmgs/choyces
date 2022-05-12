@@ -1,18 +1,21 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { StyleSheet } from "react-native";
 import { withNavigation } from "react-navigation";
+import { Button } from 'react-native-elements';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 
 
 const OptionButton = ({ title, style, navigation }) => {
     return(
-        <TouchableOpacity style={style} onPress={() => {
+        <Button 
+        style={style} 
+        type="solid"
+        title={title} onPress={() => {
             navigation.navigate(title)
         }}>
-        <Text style={styles.text} adjustsFontSizeToFit={true}>{title}</Text>
-
-        </TouchableOpacity>
+        </Button>
 
     )
 }

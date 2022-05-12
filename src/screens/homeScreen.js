@@ -5,6 +5,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import OptionButton from '../components/welcome/OptionButton';
 import { FontAwesome } from '@expo/vector-icons'; 
 
+
+
 export default function App() {
     const [loading, setLoading] = useState(true);
     const [isFirstTimeLoad, setIsFirstTimeLoad] = useState(true);
@@ -26,19 +28,19 @@ export default function App() {
     const slides = [{
             key: 1,
             // title: 'Welcome to the Choyces App',
-            desc: 'Replace with text',
+            desc: 'Creatively Helping Our Youth Conquer Education & Success',
             backgroundColor: 'red',
         },
         {
             key: 2,
             // title: 'Play fun games',
-            desc: 'Replace with text',
+            desc: '“Creativity is contagious, pass it on!” – Albert Einstein',
             backgroundColor: 'blue',
         },
         {
             key: 3,
             // title: 'Find all your favourite books',
-            desc: 'Replace with text',
+            desc: 'Online Tutoring & Educational Consulting',
             backgroundColor: 'green',
         },
     ];
@@ -88,7 +90,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'black',
+        backgroundColor: 'blue',
     },
     booksBtn: {
         width: 200,
@@ -96,7 +98,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'black',
+        backgroundColor: 'blue',
     }, 
     aboutBtn: {
         width: 200,
@@ -104,7 +106,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'black',
+        backgroundColor: 'blue',
     },
     videosBtn: {
         width: 200,
@@ -112,7 +114,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'black',
+        backgroundColor: 'blue',
     },
     capIcon: {
         position: 'absolute',

@@ -20,7 +20,7 @@ const BooksScreen = ({ navigation }) => {
             />
             {errMessage ? <Text>{errMessage}</Text> : null}
 
-            {result.length > 1 ? <Text style={styles.topR}>We found {result.length} of the top results</Text> : null}
+            {result > 1 ? <Text style={styles.topR}>We found {result.length} of the top results</Text> : null}
 
       <FlatList
       showsVerticalScrollIndicator={false}
@@ -32,12 +32,12 @@ const BooksScreen = ({ navigation }) => {
               <TouchableOpacity onPress={() => {
                   navigation.navigate("BookDetail", {id: item.id})
               }}>
-        <BookFrame book={item}/>
+     {item.volumeInfo.imageLinks ? <BookFrame book={item}/> : <Text>Thumbnail not available</Text>}
+
         </TouchableOpacity>
           )
       }}
       />
-                  {/* <Button onPress={() => goBack()} title="Go back" /> */}
         </View>
     )
 }

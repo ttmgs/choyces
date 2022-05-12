@@ -1,5 +1,5 @@
-import React, { useState } from"react";
-import { View, Text, StyleSheet } from "react-native";
+import React, { useState } from "react";
+import { ActivityIndicator } from "react-native";
 
 
 
@@ -7,6 +7,7 @@ export default () => {
 
      const [result, setResult] = useState([]);
      const url = "https://opentdb.com/api.php?amount=10"
+     const loadingIcon = <ActivityIndicator size="large" color="yellow" />
 
 
    async function getTriviaAPI() {
@@ -20,5 +21,5 @@ export default () => {
             })
     }
 
-    return [result, getTriviaAPI]
+    return [result, getTriviaAPI, loadingIcon]
 }

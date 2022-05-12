@@ -2,7 +2,6 @@ import { useState } from "react";
 
 
 
-
 export default () => {
 
     const [term, setTerm] = useState("");
@@ -28,7 +27,6 @@ export default () => {
         } catch {
             setErrMessage("Something went wrong")
         }
-
     }
 
     return [term, result, setTerm, errMessage, getAPI]

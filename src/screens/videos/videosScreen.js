@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet, Text, FlatList, TouchableOpacity, ActivityIndicator } from "react-native";
+import { View, StyleSheet, Text, FlatList, TouchableOpacity } from "react-native";
 import { ScrollView } from 'react-native-virtualized-view';
 import SearchBar from "../../components/videos/SearchBar";
 import videoAPIResult from "../../api/videos/videoAPIResult";
@@ -30,12 +30,9 @@ const VideoScreen = ({ navigation }) => {
 
             {errMessage ? <Text>{errMessage}</Text> : null}
 
-       {}
            
        {result.length > 1 ? <Text style={styles.topR}>We found {result.length} of the top results</Text> : null}
        
-
-            {/* {isLoading ? <ActivityIndicator size="large" color="yellow" /> : "Start Loading"} */}
 
 
          <FlatList

@@ -24,7 +24,7 @@ const TriviaResultShow = ({ result }) => {
          <Text style={styles.label}>{result.question}</Text>
        </View>
        
-       <Text style={styles.topic}> Topic: {result.category}</Text>
+       <Text style={styles.topic}>{result.category}</Text>
 
 
 

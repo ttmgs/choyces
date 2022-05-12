@@ -15,6 +15,7 @@
     "@react-native-community/masked-view": "^0.1.11",
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/stack": "^6.2.1",
+    "@rneui/themed": "^4.0.0-rc.3",
     "axios": "^0.26.1",
     "dispatch": "^1.0.2",
     "expo": "~44.0.0",
