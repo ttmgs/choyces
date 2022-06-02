@@ -68,7 +68,7 @@ export default function App() {
         return ( 
 
         <View style = { styles.container } >
-        <OptionButton style = {styles.gameBtn} title = "Games" />
+        <OptionButton style={styles.gameBtn} title = "Games" />
         <FontAwesome style={styles.capIcon} name="graduation-cap" size={50} color="black" />
         <OptionButton style = {styles.booksBtn} title = "Books" />
         <OptionButton style = {styles.videosBtn} title = "Videos" />
@@ -79,7 +79,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#fff',
+        backgroundColor: 'black',
         flex: 1,
         justifyContent: 'space-evenly',
         alignItems: 'center',

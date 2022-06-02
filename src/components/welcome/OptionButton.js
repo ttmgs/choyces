@@ -1,33 +1,32 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { withNavigation } from "react-navigation";
-import { Button } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 
 
 const OptionButton = ({ title, style, navigation }) => {
     return(
-        <Button 
+        <TouchableOpacity
         style={style} 
-        type="solid"
-        title={title} onPress={() => {
+        onPress={() => {
             navigation.navigate(title)
         }}>
-        </Button>
+
+            <Text style={styles.title}>{title}</Text>
+        </TouchableOpacity>
 
     )
 }
 
+
 const styles = StyleSheet.create({
-    text: {
-        textAlign: 'center',
-        color: 'white',
-        fontSize: 18,
-        fontWeight: 'bold'
-    }
+   title: {
+       color: 'white',
+       fontWeight: 'bold'
+   }
 })
 
 
 export default withNavigation(OptionButton)
+
